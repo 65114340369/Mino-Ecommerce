@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "serve dist/ecommerce-app/browser -l $PORT",
+    "build": "ng build --configuration production",
+    "dev": "ng serve",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -20,6 +21,7 @@
     "@emailjs/browser": "^4.4.1",
     "idb": "^8.0.3",
     "rxjs": "~7.8.0",
+    "serve": "^14.2.4",
     "thai-data": "^3.0.2",
     "tslib": "^2.3.0"
   },
